@@ -27,7 +27,7 @@ namespace contactapp1.api.Controllers
         [HttpGet("para/{myname}")]
         public ActionResult<string> Get(string myname)
         {
-            return "yr name" + myname;
+            return "your name" + myname;
         }
 
         // POST api/values
