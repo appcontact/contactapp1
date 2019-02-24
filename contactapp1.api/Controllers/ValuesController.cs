@@ -24,6 +24,12 @@ namespace contactapp1.api.Controllers
             return "value";
         }
 
+        [HttpGet("para/{myname}")]
+        public ActionResult<string> Get(string myname)
+        {
+            return "yr name" + myname;
+        }
+
         // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)
